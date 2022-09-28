@@ -1,0 +1,30 @@
+GET http://localhost:3000/post
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib21rYXIiLCJpYXQiOjE2NjQyODk2ODMsImV4cCI6MTY2NDI4OTcwM30.Tifvv_kfHhheV1GzId-0AaszGFJSOcTenLrnQHlGgEo
+
+
+###
+
+DELETE http://localhost:8000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib21rYXIiLCJpYXQiOjE2NjQyODk2MzV9.00DblnEYR7R_TfHr-NYX8CXT404qVbU8m4WFr5GEglQ"
+}
+
+###
+
+POST http://localhost:8000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib21rYXIiLCJpYXQiOjE2NjQyODk2MzV9.00DblnEYR7R_TfHr-NYX8CXT404qVbU8m4WFr5GEglQ"
+}
+
+###
+
+POST http://localhost:8000/login
+Content-Type: application/json
+
+{
+    "username": "omkar"
+}
