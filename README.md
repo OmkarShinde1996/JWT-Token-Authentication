@@ -13,4 +13,4 @@ To simulate this process using this repo follow below steps.
 6) copy and paste access token in 1st api and copy paste refresh token in 2nd and 3rd api
 7) now run 1st api (if you get forbidden error run the 3rd api to generate new access token using refresh token as access token is only valid for 20s).
 8) keep generating access tokens as long as you want using 3rd api with refresh token.
-9) once done you can use 3rd api to invalidate the refresh token and after that you  no longer able to generate new access token using the same refresh token with 3rd api. You need to re-generate new access and refresh token to access 1st api using 4th api.
+9) once done, you can use 2nd api to invalidate the refresh token and after that you  no longer able to generate new access token using the same refresh token with 3rd api. You need to re-generate new access and refresh token to access 1st api using 4th api.
